@@ -24,6 +24,7 @@ import Html
         , th
         , tr
         , ul
+        , img
         )
 import Html.Attributes
     exposing
@@ -36,6 +37,7 @@ import Html.Attributes
         , target
         , type_
         , value
+        , src
         )
 import Html.Events as Events
 import Modal
@@ -180,7 +182,7 @@ frame { model, session, activePage, activeMailbox, modal, content } =
                 [ button [ class "navbar-toggle", Events.onClick (MainMenuToggled |> model.mapMsg) ]
                     [ i [ class "fas fa-bars" ] [] ]
                 , span [ class "navbar-brand" ]
-                    [ a [ href <| session.router.toPath Route.Home ] [ text "@ inbucket" ] ]
+                    [ a [ href <| session.router.toPath Route.Home ]  [ text "@ Trashmail" ] ]
                 , ul [ class "main-nav", classList [ ( "active", model.mainMenuVisible ) ] ]
                     [ if session.config.monitorVisible then
                         navbarLink Monitor (session.router.toPath Route.Monitor) [ text "Monitor" ] activePage
@@ -209,8 +211,8 @@ frame { model, session, activePage, activeMailbox, modal, content } =
         , footer []
             [ div [ class "footer" ]
                 [ externalLink "https://www.inbucket.org" "Inbucket"
-                , text " is an open source project hosted on "
-                , externalLink "https://github.com/inbucket/inbucket" "GitHub"
+                , text " - Powered by open source project, integrated by "
+                , externalLink "https://www.linkedin.com/in/libor-%C5%A1lepr-1a743bb0/" "Libor Šlepr"
                 , text "."
                 ]
             ]
@@ -307,3 +309,10 @@ ariaExpanded value =
 
         else
             "false"
+
+
+
+
+
+
+
