@@ -15,9 +15,9 @@
   --input-bg: white;
   --input-bg-active: white;
 
-  --btn-default-bg-color: #337ab7;
+  --btn-default-bg-color: #78faae;
   --btn-default-bg-image: linear-gradient(to bottom, #337ab7 0, #265a88 100%);
-  --btn-default-color: #ffffff;
+  --btn-default-color: #0e3a30;
   --btn-danger-bg-color: #d9534f;
   --btn-danger-bg-image: linear-gradient(to bottom, #d9534f 0, #c12e2a 100%);
   --btn-light-bg-color: #eee;
@@ -39,20 +39,21 @@
   --well-border: #e8e8e8;
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #202124;
+    --bg-color: #0e3a30;
     --primary-color: #bdc1c6;
-    --high-color: #8ab4f8;
-    --border-color: #5f6368;
-    --selected-color: #303134;
+    --high-color: #78faae;
+    --border-color: #78faae;
+    --selected-color: #1e4a40;
 
     --input-bg: var(--bg-color);
     --input-bg-active: rgb(48, 49, 52);
 
-    --btn-default-bg-color: #303134;
+    --btn-default-bg-color: #78faae;
     --btn-default-bg-image: none;
-    --btn-default-color: #e8eaed;
+    --btn-default-color: #0e3a30;
     /*--btn-danger-bg-color: #d9534f;*/
     --btn-danger-bg-image: none;
     /*--btn-light-bg-color: #eee;*/
